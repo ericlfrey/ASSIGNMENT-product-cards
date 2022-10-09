@@ -55,6 +55,7 @@ h1 {
 
 .img-product {
   text-align: center;
+  position: relative;
 }
 
 img {
@@ -96,4 +97,18 @@ p {
 
 footer {
   font-size: 9px;
+}
+
+.img-photo {
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.img-sold-out {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: 50%;
 }
