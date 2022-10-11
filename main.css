@@ -20,16 +20,15 @@ h1 {
   flex-wrap: wrap;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-
 }
 
 .card {
+  background-color: whitesmoke;
   border: solid 1px black;
   border-radius: 5px;
   margin: 5px;
-  flex: 1 1 30%;
   box-sizing: border-box;
-  background-color: whitesmoke;
+  flex: 1 1 calc(33.33% - 10px);
 }
 
 .card-header {
@@ -54,12 +53,16 @@ h1 {
 }
 
 .img-product {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
 img {
   height: 150px;
+  width: 220px;
   border-radius: 5px;
 }
 
@@ -101,14 +104,14 @@ footer {
 
 .img-photo {
   z-index: 1;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
 }
 
 .img-sold-out {
   position: absolute;
   z-index: 2;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   opacity: 50%;
 }
